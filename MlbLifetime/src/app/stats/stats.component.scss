@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    td, th {
+        text-align: right;
+      }
+    th.left, td.left {
+        text-align: left;
+    }
+
+    tr.counts {
+        background-color: rgba($color: #000000, $alpha: .03)
+    }
+
+    tr a {
+        color: black;
+    }
+
+    tr.footer-row {
+        font-weight: bold;
+    }
+}
+
+.position {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.age {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.jump-link {
+    margin-top: 20px;
+    &-pipe {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-jump {
+        color: #000;
+    }
+}
+
+.probable { margin-right: 5px;}
+
+.owner-header {
+    // border-bottom: 1px solid rgba(0,0,0,.15);
+    // padding-bottom: 20px;
+
+    background-color: rgba(0,0,0,.05);
+    padding: 15px;
+    color: rgba(0,0,0,.55);;
+}
+
+.owner-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.owner-container {
+    @media (min-width: 600px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.stat-col {
+    padding: 5px;
+}
+
+.mat-cell {
+    text-align: right;
+    border-right: 1px solid  rgba(0,0,0,.05);;
+    padding: 5px;
+}
+
+.owner-table-header {
+    font-weight: bold;
+}
+
+tr.bold-line td {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.plain-link {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+
+.search {
+    font-size: 14px;
+    color: rgba(0,0,0,.33);
+}
+
+.no-stats {
+    text-decoration: none;
+}
+
+.probables-date {
+    margin-top: 10px;
+}

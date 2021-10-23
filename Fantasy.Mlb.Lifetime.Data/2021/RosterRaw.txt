@@ -1,0 +1,321 @@
+Oscar | Kyle Lewis | Bat | lewisky01
+Oscar | Randy Arozarena | Bat | arozara01
+Oscar | Ryan Mountcastle | Bat | mountry01
+Oscar | Jordan Groshans | Bat | 
+Oscar | Nick Gonzales | Bat | 
+Oscar | Dane Dunning | P | dunnida01
+Oscar | Cody Bellinger | Bat | bellico01
+Oscar | Gerrit Cole | P | colege01
+Oscar | Marcus Semien | Bat | semiema01
+Oscar | Jack Flaherty | P | flaheja01
+Oscar | Matt Chapman | Bat | chapmma01
+Oscar | Jonathan Villar | Bat | villajo01
+Oscar | Mike Soroka | P | 
+Oscar | Eugenio Suarez | Bat | suareeu01
+Oscar | Jeff McNeil | Bat | mcneije01
+Oscar | Nicholas Castellanos | Bat | casteni01
+Oscar | Trey Mancini | Bat | mancitr01
+Oscar | Paul DeJong | Bat | dejonpa01
+Oscar | Tim Anderson | Bat | anderti01
+Oscar | Nico Hoerner | Bat | hoernni01
+Oscar | Kyle Schwarber | Bat | schwaky01
+Oscar | DJ LeMahieu | Bat | lemahdj01
+Oscar | Max Muncy | Bat | muncyma01
+Oscar | Willson Contreras | Bat | contrwi01
+Oscar | Ryan McMahon | Bat | mcmahry01
+Oscar | Brendan Rodgers | Bat | 
+Oscar | Griffin Canning | P | cannigr01
+Oscar | Mike Minor | P | minormi01
+Oscar | John Means | P | meansjo01
+Oscar | Dustin May | P | maydu01
+Oscar | David Price | P | priceda01
+Oscar | Rick Porcello | P | 
+Oscar | Felipe Vazquez | P | 
+Oscar | Jordan Yamamoto | P | 
+Oscar | Patrick Sandoval | P | 
+Oscar | Zac Lowther | P | 
+Oscar | Brennen Davis | Bat | 
+Oscar | Kevin Newman | Bat | newmake01
+Oscar | Daniel Norris | P | norrida01
+Oscar | Adrián Morejón | P | morejad01
+Justin | Spencer Turnbull | P | turnbsp01
+Justin | Jon Gray | P | grayjo02
+Justin | Jakob Junis | P | junisja01
+Justin | Kyle Freeland | P | 
+Justin | Jose Quintana | P | quintjo01
+Justin | Kyle Wright | P | wrighky01
+Justin | Alex Bregman | Bat | bregmal01
+Justin | Pete Alonso | Bat | alonspe01
+Justin | Fernando Tatis Jr. | Bat | tatisfe02
+Justin | Freddie Freeman | Bat | freemfr01
+Justin | Ketel Marte | Bat | marteke01
+Justin | Gavin Lux | Bat | luxga01
+Justin | George Springer | Bat | 
+Justin | Noah Syndergaard | P | 
+Justin | Whit Merrifield | Bat | merriwh01
+Justin | Max Fried | P | friedma01
+Justin | Josh Hader | P | haderjo01
+Justin | Julio Rodriguez | Bat | 
+Justin | Josh Donaldson | Bat | donaljo02
+Justin | Paul Goldschmidt | Bat | goldspa01
+Justin | Bryan Reynolds | Bat | reynobr01
+Justin | Dinelson Lamet | P | lametdi01
+Justin | Charlie Blackmon | Bat | blackch02
+Justin | Starling Marte | Bat | martest01
+Justin | Byron Buxton | Bat | buxtoby01
+Justin | Alex Verdugo | Bat | verdual01
+Justin | Edwin Diaz | P | diazed04
+Justin | Brad Keller | P | kellebr01
+Justin | Willy Adames | Bat | adamewi01
+Justin | Dallas Keuchel | P | keuchda01
+Justin | Josh Lindblom | P | lindbjo01
+Justin | Joey Votto | Bat | vottojo01
+Justin | Jean Segura | Bat | segurje01
+Justin | Yusei Kikuchi | P | kikucyu01
+Justin | Franchy Cordero | Bat | cordefr02
+Justin | Hunter Dozier | Bat | doziehu01
+Justin | Deivi Garcia | P | 
+Justin | Nolan Jones | Bat | 
+Justin | Jordan Balazov | P | 
+Justin | CJ Abrams | Bat | 
+Jeremy | Corbin Burnes | P | burneco01
+Jeremy | Max Meyer | P | 
+Jeremy | Brandon Lowe | Bat | lowebr01
+Jeremy | Kumar Rocker | P | 
+Jeremy | Jack Leiter | P | 
+Jeremy | George Kirby | P | 
+Jeremy | Tony Gonsolin | P | 
+Jeremy | Andrew Painter | P | 
+Jeremy | Wilman Diaz | Bat | 
+Jeremy | Cristian Hernandez | Bat | 
+Jeremy | Vladimir Guerrero Jr. | Bat | guerrvl02
+Jeremy | Eloy Jimenez | Bat | 
+Jeremy | Yordan Álvarez | Bat | alvaryo01
+Jeremy | Gleyber Torres | Bat | torregl01
+Jeremy | Wander Franco | Bat | 
+Jeremy | Luis Robert | Bat | roberlu01
+Jeremy | Chris Paddack | P | paddach01
+Jeremy | Bo Bichette | Bat | bichebo01
+Jeremy | Blake Snell | P | snellbl01
+Jeremy | Jesus Luzardo | P | luzarje01
+Jeremy | Jarred Kelenic | Bat | 
+Jeremy | Kyle Tucker | Bat | tuckeky01
+Jeremy | Nate Pearson | P | 
+Jeremy | Alex Kirilloff | Bat | kirilal01
+Jeremy | Brendan McKay | P | 
+Jeremy | Nick Madrigal | Bat | madrini01
+Jeremy | Dylan Carlson | Bat | carlsdy01
+Jeremy | Alec Bohm | Bat | bohmal01
+Jeremy | Emerson Hancock | P | 
+Jeremy | Spencer Torkelson | Bat | 
+Jeremy | Sixto Sanchez | P | 
+Jeremy | Brailyn Marquez | P | 
+Jeremy | Aroldis Chapman | P | chapmar01
+Jeremy | Grayson Rodriguez | P | 
+Jeremy | Pedro Leon | Bat | 
+Jeremy | Noelvi Marte | Bat | 
+Jeremy | Luis Severino | P | 
+Jeremy | Logan Gilbert | P | 
+Jeremy | Andrew Vaughn | Bat | vaughan01
+Jeremy | Asa Lacy | P | 
+Brandon | Ke'Bryan Hayes | Bat | hayeske01
+Brandon | JJ Bleday | Bat | 
+Brandon | Chris Archer | P | archech01
+Brandon | Drew Waters | Bat | 
+Brandon | Mookie Betts | Bat | bettsmo01
+Brandon | Francisco Lindor | Bat | lindofr01
+Brandon | Anthony Rendon | Bat | rendoan01
+Brandon | Xander Bogaerts | Bat | bogaexa01
+Brandon | Austin Meadows | Bat | meadoau01
+Brandon | Mike Clevinger | P | 
+Brandon | Kris Bryant | Bat | bryankr01
+Brandon | Adalberto Mondesi | Bat | 
+Brandon | Jorge Polanco | Bat | polanjo01
+Brandon | Max Kepler | Bat | keplema01
+Brandon | Max Scherzer | P | scherma01
+Brandon | Miguel Sano | Bat | sanomi01
+Brandon | Marcus Stroman | P | stromma01
+Brandon | Dakota Hudson | P | 
+Brandon | Amed Rosario | Bat | rosaram01
+Brandon | Zack Wheeler | P | wheelza01
+Brandon | Christian Walker | Bat | walkech02
+Brandon | Sandy Alcantara | P | alcansa01
+Brandon | Oscar Mercado | Bat | 
+Brandon | Lance McCullers Jr. | P | mcculla02
+Brandon | Mike Foltynewicz | P | foltymi01
+Brandon | Jose Urquidy | P | urquijo01
+Brandon | Domingo German | P | germado01
+Brandon | Aaron Civale | P | civalaa01
+Brandon | Zach Plesac | P | plesaza01
+Brandon | Yandy Díaz | Bat | diazya01
+Brandon | Tommy Edman | Bat | edmanto01
+Brandon | Justin Upton | Bat | uptonju01
+Brandon | Danny Duffy | P | duffyda01
+Brandon | Miles Mikolas | P | 
+Brandon | Trevor Richards | P | richatr01
+Brandon | Zach Davies | P | davieza02
+Brandon | Matt Shoemaker | P | shoemma01
+Brandon | Gio Urshela | Bat | urshegi01
+Brandon | Gregory Polanco | Bat | polangr01
+Brandon | Jesse Winker | Bat | winkeje01
+Ryan | Trent Grisham | Bat | grishtr01
+Ryan | Brady Singer | P | singebr01
+Ryan | Garrett Mitchell | Bat | 
+Ryan | Daniel Lynch | P | 
+Ryan | Christian Yelich | Bat | yelicch01
+Ryan | Jose Ramirez | Bat | ramirjo01
+Ryan | Trea Turner | Bat | turnetr01
+Ryan | Luis Castillo | P | castilu02
+Ryan | Jose Berrios | P | berrijo01
+Ryan | Keston Hiura | Bat | hiurake01
+Ryan | Jo Adell | Bat | 
+Ryan | Mackenzie Gore | P | 
+Ryan | Rhys Hoskins | Bat | hoskirh01
+Ryan | Victor Robles | Bat | roblevi01
+Ryan | Royce Lewis | Bat | 
+Ryan | Brandon Woodruff | P | woodrbr01
+Ryan | Franmil Reyes | Bat | reyesfr01
+Ryan | German Marquez | P | marquge01
+Ryan | Carter Kieboom | Bat | kieboca01
+Ryan | Joe Musgrove | P | musgrjo01
+Ryan | Cavan Biggio | Bat | biggica01
+Ryan | Forrest Whitley | P | 
+Ryan | Bobby Witt Jr. | Bat | 
+Ryan | Ramon Laureano | Bat | laurera01
+Ryan | Zac Gallen | P | galleza01
+Ryan | Cristian Pache | Bat | pachecr01
+Ryan | Dylan Bundy | P | bundydy01
+Ryan | Marco Luciano | Bat | 
+Ryan | Spencer Howard | P | howarsp01
+Ryan | Pablo Lopez | P | lopezpa01
+Ryan | Eric Lauer | P | 
+Ryan | Luis Arraez | Bat | arraelu01
+Ryan | Austin Martin | Bat | 
+Ryan | Justus Sheffield | P | sheffju01
+Ryan | Freddy Peralta | P | peralfr01
+Ryan | Oscar Colas | P | 
+Ryan | Nick Lodolo | P | 
+Ryan | Tyler Mahle | P | mahlety01
+Ryan | Josiah Gray | P | 
+Ryan | Quinn Priester | P | 
+Matt | Stephen Strasburg | P | strasst01
+Matt | Tommy La Stella | Bat | lasteto01
+Matt | Geraldo Perdomo | Bat | perdoge01
+Matt | Khris Davis | Bat | 
+Matt | Ronald Acuña Jr. | Bat | acunaro01
+Matt | Rafael Devers | Bat | deverra01
+Matt | Shane Bieber | P | biebesh01
+Matt | Ozzie Albies | Bat | albieoz01
+Matt | Jacob deGrom | P | degroja01
+Matt | Jorge Soler | Bat | solerjo01
+Matt | Trevor Bauer | P | bauertr01
+Matt | Carlos Santana | Bat | santaca01
+Matt | Josh Bell | Bat | belljo02
+Matt | Patrick Corbin | P | corbipa01
+Matt | Clayton Kershaw | P | kershcl01
+Matt | Adley Rutschman | Bat | 
+Matt | Matthew Boyd | P | boydma01
+Matt | Hyun Jin Ryu | P | ryuhy01
+Matt | Yasmani Grandal | Bat | grandya01
+Matt | David Fletcher | Bat | fletcda02
+Matt | Casey Mize | P | mizeca01
+Matt | José Abreu | Bat | abreujo02
+Matt | Michael Brantley | Bat | brantmi02
+Matt | Tommy Pham | Bat | phamth01
+Matt | Jake Odorizzi | P | odorija01
+Matt | Sean Murphy | Bat | murphse01
+Matt | Dylan Cease | P | ceasedy01
+Matt | Vidal Brujan | Bat | 
+Matt | Randy Dobnak | P | dobnara01
+Matt | Eduardo Escobar | Bat | escobed01
+Matt | J.T. Realmuto | Bat | realmjt01
+Matt | Steven Matz | P | matzst01
+Matt | Daniel Vogelbach | Bat | vogelda01
+Matt | Taylor Rogers | P | rogerta01
+Matt | Merrill Kelly | P | kellyme01
+Matt | Mike Leake | P | 
+Matt | Joc Pederson | Bat | pederjo01
+Matt | Matthew Liberatore | P | 
+Matt | Liam Hendriks | P | hendrli01
+Matt | Touki Toussaint | P | 
+Bill | Luke Voit | Bat | 
+Bill | Garrett Crochet | P | crochga01
+Bill | James Karinchak | P | karinja01
+Bill | Dominic Smith | Bat | smithdo02
+Bill | Zac Veen | Bat | 
+Bill | Mike Trout | Bat | troutmi01
+Bill | Nolan Arenado | Bat | arenano01
+Bill | Walker Buehler | P | buehlwa01
+Bill | Lucas Giolito | P | giolilu01
+Bill | Aaron Nola | P | nolaaa01
+Bill | Michael Kopech | P | kopecmi01
+Bill | Chris Sale | P | 
+Bill | Matt Olson | Bat | olsonma02
+Bill | J.D. Martinez | Bat | martijd02
+Bill | Jose Altuve | Bat | altuvjo01
+Bill | Jasson Dominguez | Bat | 
+Bill | Joey Gallo | Bat | gallojo01
+Bill | Corey Seager | Bat | seageco01
+Bill | A.J. Puk | P | pukaj01
+Bill | Julio Urias | P | uriasju01
+Bill | Marcell Ozuna | Bat | ozunama01
+Bill | Matt Manning | P | 
+Bill | Luis Patino | P | 
+Bill | Ian Anderson | P | anderia01
+Bill | Kenta Maeda | P | maedake01
+Bill | Lance Lynn | P | lynnla01
+Bill | Corey Kluber | P | klubeco01
+Bill | Lourdes Gurriel Jr. | Bat | 
+Bill | Caleb Smith | P | smithca03
+Bill | Didi Gregorius | Bat | gregodi01
+Bill | J.D. Davis | Bat | davisjd01
+Bill | Tarik Skubal | P | skubata01
+Bill | Kyle Gibson | P | gibsoky01
+Bill | Brian Anderson | Bat | anderbr06
+Bill | Kristian Robinson | Bat | 
+Bill | Kevin Gausman | P | gausmke01
+Bill | Tyler Glasnow | P | glasnty01
+Bill | Yu Darvish | P | darviyu01
+Bill | Nelson Cruz | Bat | cruzne02
+Bill | Eddie Rosario | Bat | rosared01
+Zax | Framber Valdez | P | 
+Zax | Triston McKenzie | P | mckentr01
+Zax | Teoscar Hernandez | Bat | hernate01
+Zax | Trevor Story | Bat | storytr01
+Zax | Manny Machado | Bat | machama01
+Zax | Carlos Correa | Bat | correca01
+Zax | Yoan Moncada | Bat | moncayo01
+Zax | Javier Baez | Bat | baezja01
+Zax | Andrew Benintendi | Bat | beninan01
+Zax | Michael Conforto | Bat | confomi01
+Zax | Giancarlo Stanton | Bat | stantmi03
+Zax | Robbie Ray | P | rayro02
+Zax | Eduardo Rodriguez | P | rodried05
+Zax | James Paxton | P | paxtoja01
+Zax | Anthony Rizzo | Bat | rizzoan01
+Zax | Madison Bumgarner | P | bumgama01
+Zax | Frankie Montas | P | montafr02
+Zax | Sonny Gray | P | grayso01
+Zax | Charlie Morton | P | mortoch02
+Zax | Carlos Carrasco | P | 
+Zax | Zack Greinke | P | greinza01
+Zax | Kyle Hendricks | P | hendrky01
+Zax | Marco Gonzales | P | gonzama02
+Zax | Andrew Heaney | P | heanean01
+Zax | Mitch Keller | P | kellemi03
+Zax | Sean Manaea | P | manaese01
+Zax | Dansby Swanson | Bat | swansda01
+Zax | Zach Eflin | P | eflinza01
+Zax | Miguel Andujar | Bat | 
+Zax | Garrett Richards | P | richaga01
+Zax | Carlos Martinez | P | martica04
+Zax | Ryan Yarbrough | P | yarbrry01
+Zax | Jon Lester | P | 
+Zax | Evan White | Bat | whiteev01
+Zax | Willie Calhoun | Bat | calhowi01
+Zax | Kwang Hyun Kim | P | kimkw01
+Zax | Shohei Ohtani | P | ohtansh01
+Zax | Shohei Ohtani | Bat | ohtansh01
+Zax | Juan Soto | Bat |
+Zax | Bryce Harper | Bat |
+Zax | Aaron Judge | Bat |

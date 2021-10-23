@@ -1,0 +1,59 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    
+    <div style="padding: 10px;">
+      <mat-form-field appearance="standard" class="year-chooser">
+        <mat-select  [(value)]="Year" disabled="false" (valueChange)="loadFile()">
+          <mat-option value="2021">2021</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="standard" class="year-chooser">
+        <mat-select  [(value)]="YearType" disabled="false"  (valueChange)="loadFile()">
+          <mat-option value="Regular">Regular</mat-option>
+          <mat-option value="Post">Post</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <mat-nav-list>
+      <a mat-list-item  routerLink="leaderboard">Leaderboard</a>
+      <a mat-list-item routerLink="stats">Stats</a>
+        <ul *ngIf="showNames" class="no-bullets">
+          <li *ngFor="let owner of LeagueData?.Owners" (click)="scrollTo(owner.Name)" >
+            {{owner.Name}}
+            <!-- <a class="jump-link-jump" [routerLink]='"stats"' [fragment]="owner.Name">{{owner.Name}}</a> -->
+          </li>
+        </ul>
+      <a mat-list-item routerLink="total">Totals</a>
+
+
+<!-- 
+      <button mat-button routerLink="leaderboard">Leaderboard</button>
+      <button mat-button routerLink="stats">Stats</button>
+      <button mat-button routerLink="total">Totals</button> -->
+
+    </mat-nav-list>
+
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>MLB Lifetime - {{Year}} {{YearType}}</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

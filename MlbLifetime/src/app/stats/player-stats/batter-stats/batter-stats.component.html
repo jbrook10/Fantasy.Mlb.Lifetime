@@ -1,0 +1,92 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <table mat-table [dataSource]="Owner.Batters">
+
+        <!-- Name -->
+        <ng-container matColumnDef="Name">
+            <th mat-header-cell *matHeaderCellDef class="left"> <a class="plain-link"><span class="owner-table-header">{{Owner.Name}}</span> - Batters</a></th>
+            <td mat-cell *matCellDef="let element" class="left">
+                <span *ngIf="element.Link !== ''"><a [href]="element.Link" target="_blank">{{element.Name}} </a> </span>
+                <span *ngIf="element.Link === ''"><a class="no-stats" href="https://google.com/search?q={{element.Name}}" target="_blank">{{element.Name}} <mat-icon class="search">feed</mat-icon> </a></span>
+                <span class="age" fxHide.lt-md="true">{{element.Age === 0 ? '' : element.Age}}</span>
+            </td>
+            <td mat-footer-cell *matFooterCellDef class="left"><span>Total</span></td>
+        </ng-container>
+
+        <!-- Age -->
+        <ng-container matColumnDef="Age">
+            <th mat-header-cell *matHeaderCellDef> Age </th>
+            <td mat-cell *matCellDef="let element"> {{element.Age}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- GP -->
+        <ng-container matColumnDef="GP">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> GP </th>
+            <td mat-cell *matCellDef="let element"> {{element.GamesPlayed}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- AB -->
+        <ng-container matColumnDef="AB">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> AB </th>
+            <td mat-cell *matCellDef="let element"> {{element.AB}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- H -->
+        <ng-container matColumnDef="H">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> H </th>
+            <td mat-cell *matCellDef="let element"> {{element.H}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- R -->
+        <ng-container matColumnDef="R">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> R </th>
+            <td mat-cell *matCellDef="let element"> {{element.R}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- HR -->
+        <ng-container matColumnDef="HR">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> HR </th>
+            <td mat-cell *matCellDef="let element"> {{element.HR}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- RBI -->
+        <ng-container matColumnDef="RBI">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> RBI </th>
+            <td mat-cell *matCellDef="let element"> {{element.RBI}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- SB -->
+        <ng-container matColumnDef="SB">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> SB </th>
+            <td mat-cell *matCellDef="let element"> {{element.SB}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- BB -->
+        <ng-container matColumnDef="BB">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> BB </th>
+            <td mat-cell *matCellDef="let element"> {{element.BB}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <!-- Total -->
+        <ng-container matColumnDef="Total">
+            <th mat-header-cell *matHeaderCellDef class="stat-col"> Pts </th>
+            <td mat-cell *matCellDef="let element"> {{element.Total}} </td>
+            <td mat-footer-cell *matFooterCellDef>
+                {{Owner.BatterScore}}
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns; sticky: true"  (click)="scrollToTop()"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns; let i = index" [class.counts]="i < countingPlayers" [class.bold-line]="i === countingPlayers - 1"></tr>
+        <tr mat-footer-row *matFooterRowDef="columns" class="footer-row"></tr>
+
+    </table>
+</div>

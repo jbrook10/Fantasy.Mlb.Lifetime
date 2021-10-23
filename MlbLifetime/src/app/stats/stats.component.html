@@ -1,0 +1,20 @@
+<a [attr.id]="'topjump'"></a>
+<div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="10px" class="jump-link">
+    <div *ngFor="let owner of Owners; let i = index;">
+        <div mat-link>
+            <a class="jump-link-jump" (click)="scrollTo(owner.Name)" >{{owner.Name}}</a>
+        </div>
+    </div>
+</div>
+
+<div fxLayout="row wrap" fxLayoutAlign="center start" class="probables-date">
+    <div>{{LeagueData?.ProbablesDate}}</div>
+</div>
+
+<div class="owner-container">
+    <div *ngFor="let owner of Owners">
+        <div fxLayout="column" fxLayoutAlign="space-around stretch" fxLayoutGap="40px">
+            <app-player-stats [Owner]="owner" [SmallScreen]="SmallScreen"></app-player-stats>
+        </div>
+    </div>
+</div>

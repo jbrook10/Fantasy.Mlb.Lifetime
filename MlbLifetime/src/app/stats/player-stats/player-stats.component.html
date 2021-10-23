@@ -1,0 +1,19 @@
+<a [attr.id]="Owner.Name"></a>
+<mat-card class="owner-card">
+    <mat-card-title>
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="owner-header">
+            <span>{{Owner.Name}}</span> 
+            <span>{{Owner.BatterScore + Owner.PitcherScore}} pts.</span>
+        </div>
+    </mat-card-title>
+    <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutAlign="center start" fxLayoutGap="{{SmallScreen ? '0' : '20px' }}">
+            <div fxFlex="45" fxFlex.lt-md="100">
+                <app-batter-stats [Owner]="Owner" [SmallScreen]="SmallScreen"></app-batter-stats>
+            </div>
+            <div fxFlex="45" fxFlex.lt-md="100">
+                <app-pitcher-stats [Owner]="Owner" [SmallScreen]="SmallScreen"></app-pitcher-stats>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
