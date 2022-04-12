@@ -7,8 +7,8 @@
             <td mat-cell *matCellDef="let element" class="left">
                 <span *ngIf="element.Probable" class="probable">^</span>
                 <span *ngIf="element.Link !== ''"><a [href]="element.Link" target="_blank">{{element.Name}} </a> </span>
-                <span *ngIf="element.Link === ''"><a class="no-stats" href="https://google.com/search?q={{element.Name}}" target="_blank">{{element.Name}} <mat-icon class="search">feed</mat-icon> </a></span>
-                <span class="age">{{element.Age === 0 ? '' : element.Age}}</span>
+                <span *ngIf="element.Link === ''"><a class="no-stats" href="https://google.com/search?q={{element.Name}}&tbm=nws" target="_blank">{{element.Name}} <mat-icon class="search">feed</mat-icon> </a></span>
+                <span class="age"><a class="no-stats" href="https://google.com/search?q={{element.Name}}&tbm=nws" target="_blank">{{element.Age === 0 ? '' : element.Age}}</a></span>
             </td>
             <td mat-footer-cell *matFooterCellDef class="left">Total</td>
         </ng-container>

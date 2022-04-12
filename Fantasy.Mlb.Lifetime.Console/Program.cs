@@ -10,10 +10,10 @@ namespace Fantasy.Mlb.Lifetime.Console
         {
 
             // var rosterBuilder = new RosterBuilder();
-            // await rosterBuilder.BuildRoster(2021);
+            // await rosterBuilder.BuildRoster(2022);
 
             var playerReader = new PlayerReader();
-            await playerReader.GetAllStats(2021, Domain.Enums.SeasonType.Post);
+            await playerReader.GetAllStats(2022, Domain.Enums.SeasonType.Regular);
 
 
         }

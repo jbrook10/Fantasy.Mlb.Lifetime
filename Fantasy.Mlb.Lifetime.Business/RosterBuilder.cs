@@ -21,7 +21,7 @@ namespace Fantasy.Mlb.Lifetime.Business
         {
             _s3Client = new AmazonS3Client(RegionEndpoint.USEast1);
 
-            var objectResponse = await _s3Client.GetObjectAsync("mlb-lifetime","data/RosterRaw.txt" );
+            var objectResponse = await _s3Client.GetObjectAsync("mlb-lifetime",$"data/{year}.RosterRaw.txt" );
             StreamReader reader = new StreamReader(objectResponse.ResponseStream);
             string rosterContent = reader.ReadToEnd();
             var rosterRaw = rosterContent.Split("\r\n");
@@ -29,10 +29,12 @@ namespace Fantasy.Mlb.Lifetime.Business
             var battingRosterUri = $@"https://www.baseball-reference.com/leagues/MLB/{year}-standard-batting.shtml";
             var pitchingRosterUri = $@"https://www.baseball-reference.com/leagues/MLB/{year}-standard-pitching.shtml";
 
+            var battingTableSearchString = "<table class=\"sortable stats_table\" id=\"players_standard_batting\"";
+            var pitchingTableSearchString = "<table class=\"sortable stats_table\" id=\"players_standard_pitching\"";
+
             var battingRosterContent = await client.GetStringAsync(battingRosterUri);
             var pitchingRosterContent = await client.GetStringAsync(pitchingRosterUri);
 
-            var battingTableSearchString = "<table class=\"sortable stats_table\" id=\"players_standard_batting\"";
             var battingTableStart = battingRosterContent.IndexOf(battingTableSearchString.Replace("\\", ""));
             var battingTableEnd = battingRosterContent.IndexOf("</table>", battingTableStart);
 
@@ -51,7 +53,6 @@ namespace Fantasy.Mlb.Lifetime.Business
 
             var battingTable = battingDoc.GetElementbyId("players_standard_batting");
 
-            var pitchingTableSearchString = "<table class=\"sortable stats_table\" id=\"players_standard_pitching\"";
             var pitchingTableStart = pitchingRosterContent.IndexOf(pitchingTableSearchString.Replace("\\", ""));
             var pitchingTableEnd = pitchingRosterContent.IndexOf("</table>", pitchingTableStart);
 
@@ -108,7 +109,7 @@ namespace Fantasy.Mlb.Lifetime.Business
 
             var putObjectRequest = new Amazon.S3.Model.PutObjectRequest() {
                 BucketName = "mlb-lifetime",
-                Key = "data/Roster.Final.txt",
+                Key = $"data/{year}.Roster.Final.txt",
                 ContentBody = s.ToString(),
                 ContentType = "text/plain"
             };

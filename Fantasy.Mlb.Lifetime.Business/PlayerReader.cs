@@ -27,7 +27,7 @@ namespace Fantasy.Mlb.Lifetime.Business
         {
             _s3Client = new AmazonS3Client(RegionEndpoint.USEast1);
 
-            var objectResponse = await _s3Client.GetObjectAsync("mlb-lifetime", "data/Roster.Final.txt");
+            var objectResponse = await _s3Client.GetObjectAsync("mlb-lifetime", $"data/{year}.Roster.Final.txt");
             StreamReader reader = new StreamReader(objectResponse.ResponseStream);
             string rosterContent = reader.ReadToEnd();
 
@@ -146,8 +146,7 @@ namespace Fantasy.Mlb.Lifetime.Business
 
                 if (seasonType == SeasonType.Regular)
                 {
-                    var node = battingDoc.DocumentNode.SelectSingleNode($"//tr[@id='batting_{GetSeasonUrlString(seasonType)}.{year}']");
-                    battingNodes.Add(node);
+                    battingNodes = battingDoc.DocumentNode.SelectNodes($"//tr[@id='batting_{GetSeasonUrlString(seasonType)}.{year}']");
                 } 
                 else {
                     battingNodes = battingDoc.DocumentNode.SelectNodes($"//tr/th[starts-with(@csk,'{year}')]/..");
@@ -199,12 +198,11 @@ namespace Fantasy.Mlb.Lifetime.Business
                 HtmlDocument pitchingDoc = new HtmlDocument();
                 pitchingDoc.LoadHtml(allPitching);
 
-                HtmlNodeCollection pitchingNodes = null;
+                HtmlNodeCollection pitchingNodes;
 
                 if (seasonType == SeasonType.Regular)
                 {
-                    var node = pitchingDoc.DocumentNode.SelectSingleNode($"//tr[@id='pitching_{GetSeasonUrlString(seasonType)}.{year}']");
-                    pitchingNodes.Add(node);
+                    pitchingNodes = pitchingDoc.DocumentNode.SelectNodes($"//tr[@id='pitching_{GetSeasonUrlString(seasonType)}.{year}']");
                 } 
                 else {
                     pitchingNodes = pitchingDoc.DocumentNode.SelectNodes($"//tr/th[starts-with(@csk,'{year}')]/..");
@@ -214,19 +212,11 @@ namespace Fantasy.Mlb.Lifetime.Business
 
                 pitcher = new Pitcher(name)
                 {
+                    Probable = probables.Contains(link),
                     Position = Position.Pitcher,
                     Link = $"https://www.baseball-reference.com/players/{link.Substring(0, 1)}/{link}.shtml",
                 };
 
-                // var pitching = pitchingDoc.DocumentNode.SelectSingleNode($"//tr[@id='pitching_{GetSeasonUrlString(seasonType)}.{year}']");
-
-                // pitcher = new Pitcher(name)
-                // {
-                //     Probable = probables.Contains(link),
-                //     Position = Position.Pitcher,
-                //     Link = $"https://www.baseball-reference.com/players/{link.Substring(0, 1)}/{link}.shtml",
-
-                // };
 
                 foreach (var pitching in pitchingNodes)
                 {

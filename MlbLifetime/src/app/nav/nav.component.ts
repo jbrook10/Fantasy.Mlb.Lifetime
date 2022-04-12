@@ -19,6 +19,8 @@ export class NavComponent implements OnInit, AfterViewInit {
   route: string | undefined;
   showNames = false;
 
+  Years: number[] = [];
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -41,6 +43,11 @@ export class NavComponent implements OnInit, AfterViewInit {
       this.YearType = 'Post';
     }
 
+    const currentYear = today.getFullYear();
+    for (let index = 2021; index <= currentYear; index++) {
+      this.Years.push(index);
+    }
+
    }
 
   ngOnInit(): void {
@@ -54,7 +61,6 @@ export class NavComponent implements OnInit, AfterViewInit {
       this.showNames = this.route.indexOf('stats') >= 0;
     }
     );
-
 
     this.YearType = this.rosterService.YearType;
   }

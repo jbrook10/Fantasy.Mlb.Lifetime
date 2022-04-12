@@ -4,11 +4,13 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    
+
     <div style="padding: 10px;">
       <mat-form-field appearance="standard" class="year-chooser">
         <mat-select  [(value)]="Year" disabled="false" (valueChange)="loadFile()">
-          <mat-option value="2021">2021</mat-option>
+          <ng-container *ngFor="let y of Years">
+            <mat-option value="{{y}}">{{y}}</mat-option>
+          </ng-container>
         </mat-select>
       </mat-form-field>
       <mat-form-field appearance="standard" class="year-chooser">
@@ -31,7 +33,7 @@
       <a mat-list-item routerLink="total">Totals</a>
 
 
-<!-- 
+<!--
       <button mat-button routerLink="leaderboard">Leaderboard</button>
       <button mat-button routerLink="stats">Stats</button>
       <button mat-button routerLink="total">Totals</button> -->
