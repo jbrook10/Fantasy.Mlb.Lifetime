@@ -6,6 +6,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 {
     public class LeagueData
     {
+        public LeagueData()
+        {
+            
+        }
+        
         public int Year { get; set; }
         public  SeasonType  SeasonType { get; set; }
         public DateTime LastUpdated { get; set; }

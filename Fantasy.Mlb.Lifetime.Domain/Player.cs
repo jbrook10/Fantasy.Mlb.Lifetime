@@ -2,6 +2,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 {
     public abstract class Player
     {
+        public Player()
+        {
+            
+        }
+
         public string FantasyOwner { get; set; }
 
         public string Name { get; set; }
@@ -19,6 +24,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 
     public class Batter : Player
     {
+        public Batter()
+        {
+            
+        }
+
         public Batter(string name)
         {
             Name = name;
@@ -39,6 +49,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 
         public int BB { get; set; }
 
+        public int Change { get; set; }
+        public int CDate { get; set; }
+        
+        
+        
 
         public override int GetFantasyPoints()
         {
@@ -48,6 +63,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 
     public class Pitcher : Player
     {
+        public Pitcher()
+        {
+            
+        }
+
         public Pitcher(string name)
         {
             Name = name;
@@ -63,6 +83,8 @@ namespace Fantasy.Mlb.Lifetime.Domain
         public int SO { get; set; }
 
         public int SV { get; set; }
+        public int Change { get; set; }
+        public int CDate { get; set; }
 
         public override int GetFantasyPoints()
         {

@@ -5,6 +5,11 @@ namespace Fantasy.Mlb.Lifetime.Domain
 {
     public class Owner
     {
+        public Owner()
+        {
+            
+        }
+        
         public string Name { get; set; }
         public List<Batter> Batters { get; set; }
         public List<Pitcher> Pitchers { get; set; }

@@ -89,6 +89,19 @@ namespace Fantasy.Mlb.Lifetime.Business
                 Owners = ownerObjects
             };
 
+            var getObjectRequest = new Amazon.S3.Model.GetObjectRequest()
+            {
+                BucketName = "mlb-lifetime",
+                Key = $"assets/{year}.{seasonType.ToString()}.Data.json",
+            };
+
+            var previousFileResponse = await _s3Client.GetObjectAsync(getObjectRequest);
+            reader = new StreamReader(previousFileResponse.ResponseStream);
+            string previousFileContent = reader.ReadToEnd();
+            var previousFile = JsonSerializer.Deserialize<LeagueData>(previousFileContent);
+
+            leagueData = AddChanges(previousFile, leagueData);
+
             string jsonString = JsonSerializer.Serialize(leagueData);
             // File.WriteAllText($@"D:\jerem\Documents\code\fantasy\Fantasy.Mlb.Lifetime\Fantasy.Mlb.Lifetime.Data\{year}\{year}.Regular.Data.json", jsonString);
 
@@ -100,6 +113,64 @@ namespace Fantasy.Mlb.Lifetime.Business
                 ContentType = "application/json"
             };
             await _s3Client.PutObjectAsync(putObjectRequest);
+        }
+
+        private LeagueData AddChanges(LeagueData previous, LeagueData current) 
+        {
+            var cdate = DateTime.Now.DayOfYear - 1;
+            var compDate = DateTime.Now.DayOfYear;
+
+            foreach (var currentOwner in current.Owners)
+            {
+                var matchingOwner = previous.Owners.FirstOrDefault(o => o.Name == currentOwner.Name);
+                if (matchingOwner == null) continue;
+
+                foreach (var currentBatter in currentOwner.Batters) 
+                {
+                    var matchingBatter = matchingOwner.Batters?.FirstOrDefault(b => b.Name == currentBatter.Name);
+                    var currentPoints = currentBatter.GetFantasyPoints();
+                    var previousPoints =  matchingBatter.GetFantasyPoints();
+
+                    if (currentPoints != previousPoints) {
+                        currentBatter.Change = currentPoints - previousPoints;
+                        currentBatter.CDate = cdate;
+                    } 
+                    else {
+                        if (compDate - matchingBatter.CDate <= 1) 
+                        {
+                            currentBatter.Change = matchingBatter.Change;
+                        }
+                        else 
+                        {
+                            currentBatter.Change = 0;
+                        }
+                    }
+                }
+
+                foreach (var currentPitcher in currentOwner.Pitchers)
+                {
+                    var matchingPitcher = matchingOwner.Pitchers?.FirstOrDefault(b => b.Name == currentPitcher.Name);
+                    var currentPoints = currentPitcher.GetFantasyPoints();
+                    var previousPoints =  matchingPitcher.GetFantasyPoints();
+
+                    if (currentPoints != previousPoints) {
+                        currentPitcher.Change = currentPoints - previousPoints;
+                        currentPitcher.CDate = cdate;
+                    } 
+                    else {
+                        if (compDate - matchingPitcher.CDate <= 1) 
+                        {
+                            currentPitcher.Change = matchingPitcher.Change;
+                        }
+                        else 
+                        {
+                            currentPitcher.Change = 0;
+                        }
+                    }
+                }
+            }
+
+            return current;
         }
 
         private async Task<Player> ReadPlayerAsync(string entry, string probables, int year, SeasonType seasonType)

@@ -87,6 +87,10 @@ tr.bold-line td {
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
+td, th {
+  padding-left: 5px !important;
+}
+
 .plain-link {
     text-decoration: none;
     color: rgba(0,0,0,.54);
@@ -104,3 +108,10 @@ tr.bold-line td {
 .probables-date {
     margin-top: 10px;
 }
+
+.change {
+  font-size: 10px;
+  color: #2eb139;
+  font-weight: bold;
+}
+

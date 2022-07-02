@@ -1,3 +1,4 @@
+import { Pitcher } from 'src/app/models/owner.model';
 import { LeagueData } from './../models/owner.model';
 import { RosterService } from './../service/roster.service';
 import { Component, OnInit } from '@angular/core';
@@ -15,6 +16,7 @@ export class LeaderboardComponent implements OnInit {
   LeagueData: LeagueData | undefined;
   Owners: Owner[] = [];
   SortedOwners: Owner[] = [];
+  Probables: Pitcher[] = [];
   columns = ['Name', 'BatterScore', 'PitcherScore', 'TotalScore'];
 
   constructor(private rosterService: RosterService, private playerService: PlayerService) { }
@@ -25,6 +27,7 @@ export class LeaderboardComponent implements OnInit {
       this.LeagueData = r;
       this.Owners = this.LeagueData.Owners;
       this.SortedOwners = this.Owners.sort((a, b) => (b.BatterScore + b.PitcherScore) - (a.BatterScore + a.PitcherScore));
+      this.Probables = this.Owners.flatMap(o => o.Pitchers.filter(p => p.Probable)) as Pitcher[];
     });
 }
 

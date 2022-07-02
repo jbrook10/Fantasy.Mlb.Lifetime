@@ -81,6 +81,7 @@ export class Batter implements IBatter {
     Age!: number;
 
     Total!: number;
+    Change!: number;
 }
 
 export class Pitcher implements IPitcher {
@@ -98,6 +99,7 @@ export class Pitcher implements IPitcher {
     Probable!: boolean;
 
     Total!: number;
+    Change!: number;
 }
 
 export interface ITotalView {
